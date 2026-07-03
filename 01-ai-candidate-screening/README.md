@@ -1,38 +1,42 @@
-# AI Candidate Screening
+# AI Candidate Screening & JD Matching Assistant
 
-## Overview
-This project automates the candidate screening process using AI to efficiently evaluate and filter job applications.
+## Business Problem
 
-## Features
-- Automated resume parsing
-- Qualification assessment
-- Candidate ranking
-- Interview scheduling recommendations
+Recruiters often spend a lot of time manually reviewing resumes, comparing candidate experience with job requirements, and preparing shortlists.
 
-## Project Structure
-```
-01-ai-candidate-screening/
-├── README.md
-├── requirements.txt
-├── src/
-│   ├── candidate_screening.py
-│   └── utils.py
-├── data/
-│   └── sample_resumes/
-└── output/
-    └── screening_results/
-```
+## Solution Overview
 
-## Getting Started
-1. Install dependencies: `pip install -r requirements.txt`
-2. Configure your API keys
-3. Run the screening process
+This project designs an AI-assisted candidate screening workflow that reads job descriptions and resume data, extracts key skills and experience, compares them against job requirements, and produces recruiter-ready summaries.
 
-## Technologies Used
-- Python
-- OpenAI API / LLM
-- pandas
-- NLP libraries
+## Workflow
 
-## Results
-Screening results and candidate rankings are saved in the `output/` directory.
+Job Description + Candidate Resume  
+→ Extract skills, experience, and keywords  
+→ Compare with job criteria  
+→ Generate match score  
+→ Highlight skill gaps and risks  
+→ Produce recruiter summary  
+
+## Tools & Skills Demonstrated
+
+- AI-assisted workflow design
+- Recruitment process automation
+- Structured prompt design
+- Candidate scoring logic
+- Data extraction
+- Human-in-the-loop review
+
+## Planned Demo Output
+
+- Candidate match score
+- Matched skills
+- Missing skills
+- Interview questions
+- Recruiter summary
+
+## Future Improvements
+
+- Connect with recruitment CRM
+- Add API integration
+- Add audit logs
+- Add feedback loop from recruiter decisions
