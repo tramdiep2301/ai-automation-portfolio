@@ -1,46 +1,42 @@
-# AI Email Ticket Triage
+# AI Email / Ticket Triage Automation
 
-## Overview
-This project automates email and ticket triage using AI to classify, prioritize, and route incoming messages to appropriate teams.
+## Business Problem
 
-## Features
-- Automated email classification
-- Priority level assignment
-- Intelligent routing to teams
-- Spam/phishing detection
-- Sentiment analysis
+Operational teams receive many repetitive emails and requests. Manual sorting, prioritizing, and routing can delay response time and create inconsistent handling.
 
-## Project Structure
-```
-02-ai-email-ticket-triage/
-├── README.md
-├── requirements.txt
-├── src/
-│   ├── email_triage.py
-│   ├── classifier.py
-│   └── router.py
-├── data/
-│   └── sample_emails/
-└── output/
-    └── triage_results/
-```
+## Solution Overview
 
-## Getting Started
-1. Install dependencies: `pip install -r requirements.txt`
-2. Configure email/ticket API connections
-3. Set up classification rules and routing policies
-4. Run the triage process
+This project designs an AI-powered email/ticket triage workflow that classifies incoming requests, assigns priority, routes the request to the right team, and generates a draft response.
 
-## Technologies Used
-- Python
-- OpenAI API / LLM
-- Email APIs (Gmail, Outlook, etc.)
-- NLP for classification
-- Queue management systems
+## Workflow
 
-## Classification Categories
-- Support requests
-- Sales inquiries
-- Bug reports
-- Feature requests
-- Spam/Phishing
+Incoming Email / Ticket  
+→ AI intent classification  
+→ Priority assignment  
+→ Route to correct team  
+→ Log request in tracking sheet  
+→ Generate draft response  
+
+## Tools & Skills Demonstrated
+
+- Workflow automation
+- Intent classification
+- Priority rules
+- Routing logic
+- Email operations
+- Human review workflow
+
+## Planned Demo Output
+
+- Request category
+- Priority level
+- Assigned team
+- Suggested response
+- Tracking log
+
+## Future Improvements
+
+- Connect with Outlook or Gmail
+- Add Zapier / Power Automate flow
+- Add SLA tracking
+- Add Teams or Slack notification
